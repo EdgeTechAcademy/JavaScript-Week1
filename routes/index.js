@@ -6,5 +6,7 @@ var router = module.exports = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	res.render('index', { title: 'Express', customerCount: customers.count() , productCount: products.count() , orderCount: orders.count() });
+	res.render('index', { title: 'Express', customerCount: 	customers.count() ,
+											productCount: 	products.count() ,
+											orderCount: 	orders.count() });
 });
